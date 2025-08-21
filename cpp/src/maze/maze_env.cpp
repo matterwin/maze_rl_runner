@@ -117,3 +117,30 @@ bool move_to_cell_r_c(Maze *maze, std::size_t r, std::size_t c)
 
   return true;
 }
+
+void update_pos(&agentPos, action) 
+{
+  if (action ==
+}
+
+Point MazeEnv::reset()
+{
+  agentPos = maze.start;
+  return agentPos;
+}
+
+/* Returns: 
+ * - next_state, reward, done, info
+ */
+StepResult MazeEnv::step(Action action) 
+{
+  update_pos(&agentPos, action); 
+
+  next_state = agentPos;
+  reward = -1;
+  done = false;
+  info = NULL;
+
+  return {agent_pos, reward, done, info}
+}
+
