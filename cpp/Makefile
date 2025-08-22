@@ -1,7 +1,7 @@
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall -O2 -Iinclude
 
-maze_SRC = src/maze/maze_env.cpp
+maze_SRC = src/env/env.cpp
 main_SRC = src/main.cpp
 
 SRC = $(main_SRC) $(maze_SRC)

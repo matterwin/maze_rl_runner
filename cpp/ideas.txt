@@ -1,0 +1,14 @@
+
+
+maze_env
+- maze itself
+- rewards for each block
+- actions for env
+- step func
+- reset func
+- aux funcs for parsing maze
+- 
+
+
+rl_agent
+- learning method (w/ value funcs)
