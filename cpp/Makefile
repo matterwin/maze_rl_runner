@@ -9,7 +9,7 @@ SRC = $(main_SRC) $(maze_SRC)
 OBJ = $(SRC:.cpp=.o)
 
 # Executable output
-TARGET = rl_maze
+TARGET = bin/rl_maze
 
 # Default build target
 all: $(TARGET)
